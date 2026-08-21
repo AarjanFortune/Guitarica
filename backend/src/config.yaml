@@ -1,0 +1,27 @@
+note_resolution: 16 # th note
+down_sampling_rate: 22050
+bins_per_octave: 24
+cqt_n_bins: 192
+hop_length: 512
+generated_midi_n_bars: 4
+n_cores: 12
+
+train_ratio: 0.9
+epoch: 1000 #original epoch was about 192 lets see how much we can train.
+lr: 0.005
+seed_: 0
+d_model: 512
+encoder_heads: 1
+encoder_layers: 1
+
+mode: "tab"
+input_feature_type: "cqt"
+use_custom_decimation_func: True  # False to use selection-based decimation
+use_conv_stack: True
+use_galoss: True
+
+# --- Logistic formulation / inhibition loss ---
+inhibition_lambda: 1.0         # 0 disables inhibition
+pairwise_likelihood_path: "pairwise_likelihood_trimmed.npz"
+pairwise_likelihood_key: null  # only needed if the .npz has >1 array
+inhibition_boost: 1          # >1 only if your matrix is raw IoU, not yet boosted
