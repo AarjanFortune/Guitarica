@@ -67,16 +67,13 @@ frontend/build/
 .pnp.js
 
 # ========================
-# Large binary / model files (use Git LFS for these)
-# ========================
-*.model
-*.pth
+# Large binary / model files (tracked via Git LFS)
+# Only ignore non-LFS model files outside backend/model/ and backend/assets/
 *.pt
 *.ckpt
 *.bin
 *.onnx
 *.sf2
-*.sf3
 
 # ========================
 # Uploads & Outputs
