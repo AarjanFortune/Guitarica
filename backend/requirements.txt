@@ -1,9 +1,11 @@
 flask
 yt-dlp
 torch
-librosa
+librosa==1.0.0
+audioread
 numpy
 pyyaml
 pretty_midi
-piano_transcription_inference
+piano_transcription_inference==0.0.6
 matplotlib
+pytorch-ignite

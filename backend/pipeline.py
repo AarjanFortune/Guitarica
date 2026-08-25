@@ -97,7 +97,7 @@ def get_piano_transcriptor():
 # Step 1 (from test.py): audio -> MIDI via the piano-transcription model
 # ---------------------------------------------------------------------------
 def transcribe_to_midi(audio_path, output_midi_path):
-    audio, _ = load_audio(audio_path, sr=sample_rate, mono=True)
+    audio, _ = librosa.load(audio_path, sr=sample_rate, mono=True)
     transcriptor = get_piano_transcriptor()
     transcriptor.transcribe(audio, output_midi_path)
     return output_midi_path
