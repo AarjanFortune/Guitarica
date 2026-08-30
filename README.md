@@ -1,6 +1,6 @@
-# Guitarica Corrected
+# Guitarica 
 
-This project keeps the existing Guitarica frontend experience and uses the `web-app` single-model transcription pipeline for sheet and piano-roll generation.
+This project generates the piano roll and tablature representation of a guitar audio.
 
 ## Backend
 
@@ -35,4 +35,4 @@ Vite proxies `/transcribe`, `/transcribe_youtube`, `/youtube_metadata`, and `/do
 The backend returns the single-model result with source metadata, BPM/sample metadata, `pianoroll.notes`, and artifact/audio URLs. It does not return ensemble variants, confidence arrays, or output metrics.
 
 ## Demo
-View the entire poject at [Demo](https://guitarica.vercel.app/)
+View the entire project conveninently at [Demo](https://guitarica.vercel.app/)
