@@ -33,3 +33,6 @@ Vite proxies `/transcribe`, `/transcribe_youtube`, `/youtube_metadata`, and `/do
 ## Response model
 
 The backend returns the single-model result with source metadata, BPM/sample metadata, `pianoroll.notes`, and artifact/audio URLs. It does not return ensemble variants, confidence arrays, or output metrics.
+
+## Demo
+View the entire poject at [Demo](https://guitarica.vercel.app/)
